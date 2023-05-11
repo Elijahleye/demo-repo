@@ -1,0 +1,46 @@
+.parent {
+  background-color: aqua;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  font-weight: 800;
+  height: 200vh;
+  margin: 20px;
+  position: relative;
+}
+.child {
+  font-style: italic;
+  font-weight: 200;
+}
+.child-one {
+  background-color: red;
+  position: sticky;
+  top: 10px;
+  height: 20px;
+  width: 50px;
+  margin-left: 50px;
+  padding: 10px;
+  z-index: 1;
+  transition: linear 1s ;
+}
+.parent:hover .child-one {
+    background-color: greenyellow;
+  transform: translateY(100%);
+  width: 80px;
+  animation: boxAnimate 1s ease-in-out forwards  ;
+}
+@keyframes boxAnimate {
+    100%{
+        transform: translateY(100%)
+    }
+    
+}
+.child-two {
+  background-color: darkslategray;
+  position: fixed;
+  top: 0;
+  left: 1px;
+}
+.child-three {
+  background-color: lightpink;
+  position: sticky;
+}
